@@ -25,11 +25,10 @@
             display: block;
             width: 100%;
             height: auto;
-          
         }
         .text {
             font-size: 50px;
-            font-weight:bold ;
+            font-weight: bold;
             color: rgb(56, 12, 218);
             z-index: 20;
             position: absolute;
@@ -43,6 +42,7 @@
             border-radius: 5px;
             font-size: 16px;
             cursor: pointer;
+            width: 40%; /* Ajusté el ancho de los botones */
         }
         .yes1 {
             top: 50%;
@@ -66,23 +66,22 @@
         }
         @media (max-width: 768px) {
             .text {
-                font-size: 20px;
+                font-size: 30px; /* Ajusté el tamaño de fuente para pantallas más pequeñas */
             }
             .button {
-                padding: 8px 16px;
-                font-size: 14px;
+                padding: 10px 20px; /* Ajusté el padding para botones */
+                font-size: 14px; /* Ajusté el tamaño de fuente para botones */
+                width: 45%; /* Ajusté el ancho de los botones */
             }
         }
         @media (max-width: 480px) {
             .text {
-                font-size: 18px;
+                font-size: 24px; /* Ajusté el tamaño de fuente para pantallas muy pequeñas */
             }
             .button {
-                padding: 6px 12px;
-                font-size: 12px;
-            }
-            .yes1, .yes2, .no {
-                top: unset;
+                padding: 8px 16px; /* Ajusté el padding para botones */
+                font-size: 12px; /* Ajusté el tamaño de fuente para botones */
+                width: 90%; /* Hice que los botones ocupen más espacio en pantallas pequeñas */
                 left: 50%;
                 transform: translateX(-50%);
                 margin-top: 10px;
