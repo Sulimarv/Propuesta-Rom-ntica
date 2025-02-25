@@ -27,7 +27,7 @@
             height: auto;
         }
         .text {
-            font-size: 50px;
+            font-size: 40px;
             font-weight: bold;
             color: rgb(56, 12, 218);
             z-index: 20;
@@ -37,12 +37,11 @@
         }
         .button {
             position: absolute;
-            padding: 25px 25px;
+            padding: 20px;
             border: none;
             border-radius: 5px;
             font-size: 16px;
             cursor: pointer;
-            width: 40%; /* Ajusté el ancho de los botones */
         }
         .yes1 {
             top: 50%;
@@ -61,27 +60,28 @@
         .no {
             bottom: 8%;
             right: 5%;
-            background-color: #a94952;
+            background-color: #8d2d37;
             color: white;
         }
         @media (max-width: 768px) {
             .text {
-                font-size: 30px; /* Ajusté el tamaño de fuente para pantallas más pequeñas */
+                font-size: 28px;
             }
             .button {
-                padding: 10px 20px; /* Ajusté el padding para botones */
-                font-size: 14px; /* Ajusté el tamaño de fuente para botones */
-                width: 45%; /* Ajusté el ancho de los botones */
+                padding: 15px 20px;
+                font-size: 14px;
             }
         }
         @media (max-width: 480px) {
             .text {
-                font-size: 24px; /* Ajusté el tamaño de fuente para pantallas muy pequeñas */
+                font-size: 24px;
             }
             .button {
-                padding: 8px 16px; /* Ajusté el padding para botones */
-                font-size: 12px; /* Ajusté el tamaño de fuente para botones */
-                width: 90%; /* Hice que los botones ocupen más espacio en pantallas pequeñas */
+                padding: 10px 15px;
+                font-size: 12px;
+            }
+            .yes1, .yes2, .no {
+                top: unset;
                 left: 50%;
                 transform: translateX(-50%);
                 margin-top: 10px;
