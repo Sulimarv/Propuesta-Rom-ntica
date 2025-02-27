@@ -97,14 +97,23 @@
             }
         }
     </style>
-    </head>
+    <script>
+        function redirigir(opcion) {
+            if (opcion === "si") {
+                window.location.href = "https://camilokob1407.wixsite.com/28225";
+            } else if (opcion === "no") {
+                window.location.href = "https://camilokob1407.wixsite.com/my-site-1";
+            }
+        }
+    </script>
+</head>
 <body>
     <div class="text">¿Puedo ser tu pololo?</div>
     <div class="container">
         <img src="./snoopy.jpg" alt="Propuesta Romántica" class="image">
-        <button class="button yes1">Sí</button>
-        <button class="button yes2">Sí</button>
-        <button class="button no">No</button>
+        <button class="button yes1" onclick="redirigir('si')">Sí</button>
+        <button class="button yes2" onclick="redirigir('si')">Sí</button>
+        <button class="button no" onclick="redirigir('no')">No</button>
     </div>
 </body>
 </html>
